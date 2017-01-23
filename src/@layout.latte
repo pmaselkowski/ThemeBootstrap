@@ -1,4 +1,4 @@
-<title>{if $config->title}{$config->title}{else}Overview{/if}</title>
+<title>{include title}{if 'overview' !== $active && $config->title} - {$config->title}{/if}</title>
 <div class="row">
 	<nav id="navigation">
 		<div class="container-fluid">
